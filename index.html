@@ -1,78 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DAVBOT</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    </head>
-    <style>
-        body {
-            background: black;
-            color: darkgray;
-        }
-    </style>
-
+<head>
+    <title>DAVBOT</title>
+</head>
+<body>
+<center>
+    <img src="DEVBOT.png" height="300">
+</center>
+<center>
+    <h1 style="color:white">Download DAVBOT Beta on <a href="https://davteam.itch.io/davbot">Itch.io</a> & <a href="https://gamejolt.com/games/DAVBOT/761080">GameJolt</a> For Free!</h1>
+</center>
+<center>
+    <h1 style="color: white;">Spin-offs (Still in Works):</h1>
+</center>
+<center>
+    <a href="https://davteam.itch.io/davboteletricexodus"><img src="dvbtee.png" height="200"></a>
+    <a href="https://davteam.itch.io/davbot-runner"><img src="DVBT Runner updated.png" height="200"></a>
+    <a href="https://davteam.itch.io/davbot-birthday-edition"><img src="DAVBOT Log1o.png" height="200"></a>
+</center>
+<center>
+    <img src="davbotstare.png" height="600">
+</center>
+</body>
 <style>
     body {
-          margin: 0;
-          user-drag: none;
-          -webkit-user-drag: none;
-          user-select: none;
-          -moz-user-select: none;
-          -webkit-user-select: none;
-          -ms-user-select: none;
-          font-family: 'Wix Madefor Text', sans-serif;
-}
+        background-image: url(background.png);
+    }
 </style>
+<center>
+ <!-- Display the countdown timer in an element -->
+ <p id="demo" style="color: white; font-size: xx-large;"></p>
 
-    <body>
-        <center>
-        <img src="davteam logo right grey.png" height="120" width="206">
-        </center>
-        
-    </body>
-    <center>
-    <style>
-        body {
-            font-size: xxx-large;
-            color: white
-        }
-    </style>
-        <center>
-            <img src="Nowy projekt (73).png" height="500">
-        </center>
-    <!-- Display the countdown timer in an element -->
-    <p id="demo"></p>
-
-    <script style="color:white">
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jun, 30, 2023 18:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "NEW UPDATE AVAILABLE RIGHT NOW";
-      }
-    }, 1000);
-    </script>
-    </center>
-</html>
+ <script style="color:white">
+ // Set the date we're counting down to
+ var countDownDate = new Date("Sep, 16, 2023 18:00:00").getTime();
+ 
+ // Update the count down every 1 second
+ var x = setInterval(function() {
+ 
+   // Get today's date and time
+   var now = new Date().getTime();
+ 
+   // Find the distance between now and the count down date
+   var distance = countDownDate - now;
+ 
+   // Time calculations for days, hours, minutes and seconds
+   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+   // Display the result in the element with id="demo"
+   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+   + minutes + "m " + seconds + "s ";
+ 
+   // If the count down is finished, write some text
+   if (distance < 0) {
+     clearInterval(x);
+     document.getElementById("demo").innerHTML = "NEW UPDATE AVAILABLE RIGHT NOW";
+   }
+ }, 1000);
+ </script>
+</center>
